@@ -3,7 +3,8 @@ export const ScanDetailCategory = {
     MANAGEABILITY:"Manageability",
     UPGRADABILITY:"Upgradability",
     SECURITY:"Security",
-    PERFORMANCE:"Performance"
+    PERFORMANCE:"Performance",
+    TEST: "XD"
 }
 
 export const ScanIssueType = {
