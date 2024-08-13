@@ -4,15 +4,13 @@ export enum ECategory {
     UPGRADABILITY = 3, 
     SECURITY = 4,
     PERFORMANCE = 5,
-    TEST = 123456
 }
 export const CategoryTitleMap: Record<ECategory, string> = {
     [ECategory.UX_UI]: "UX and UI",
     [ECategory.MANAGEABILITY]: "Manageability",
     [ECategory.UPGRADABILITY]: "Upgradability",
     [ECategory.SECURITY]: "Security",
-    [ECategory.PERFORMANCE]: "Performance",
-    [ECategory.TEST]: "Testing xD"
+    [ECategory.PERFORMANCE]: "Performance"
 };
 
 export enum EIssueType {
