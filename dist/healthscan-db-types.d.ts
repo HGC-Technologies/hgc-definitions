@@ -1,0 +1,26 @@
+export declare enum ECategory {
+    UX_UI = 1,
+    MANAGEABILITY = 2,
+    UPGRADABILITY = 3,
+    SECURITY = 4,
+    PERFORMANCE = 5
+}
+export declare const CategoryTitleMap: Record<ECategory, string>;
+export declare enum EIssueType {
+    SLOW_QUERIES = 1,
+    LARGE_TABLES = 2,
+    LONG_TITLES = 3,
+    GLOBAL_UI_SCRIPTS = 4,
+    ACL = 5,
+    BUSY_FORMS = 6,
+    SLOW_SCRIPTS = 7,
+    DATABASE_LOOKUPS_IN_ACCESS_CONTROL_RULES = 8,
+    GLOBAL_BUSINESS_RULES = 9,
+    INSTANCE_ERROR_LOGS = 10,
+    LONG_RUNNING_REPORTS = 11,
+    DUPLICATE_SCRIPT_INCLUDES = 12,
+    DUPLICATE_FIELDS = 13,
+    SCRIPT_INCLUDE_REPORTS = 14,
+    TOO_MANY_CHOICES = 15
+}
+export declare const IssueTypeTitleMap: Record<EIssueType, string>;
