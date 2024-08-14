@@ -30,3 +30,4 @@ export declare enum EIssueType {
     SCRIPT_INCLUDE_NO_ACL = 21
 }
 export declare const IssueTypeTitleMap: Record<EIssueType, string>;
+export declare const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]>;

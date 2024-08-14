@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.IssueTypeTitleMap = exports.EIssueType = exports.CategoryTitleMap = exports.ECategory = void 0;
+exports.CategoryToIssueTypesMap = exports.IssueTypeTitleMap = exports.EIssueType = exports.CategoryTitleMap = exports.ECategory = void 0;
 var ECategory;
 (function (ECategory) {
     ECategory[ECategory["UX_UI"] = 1] = "UX_UI";
@@ -63,4 +63,26 @@ exports.IssueTypeTitleMap = {
     [EIssueType.LAST_SYSTEM_UPGRADE]: "Last System Upgrade",
     [EIssueType.REPORT_3_MONTHS]: "Report Three Months (??)", // this title aint clear xd
     [EIssueType.SCRIPT_INCLUDE_NO_ACL]: "Script Include No ACL (??)", // need a better title here too
+};
+exports.CategoryToIssueTypesMap = {
+    [ECategory.UX_UI]: [
+        EIssueType.LONG_TITLES, EIssueType.GLOBAL_UI_SCRIPTS, EIssueType.BUSY_FORMS,
+        EIssueType.TOO_MANY_CHOICES,
+    ],
+    [ECategory.MANAGEABILITY]: [
+        EIssueType.INSTANCE_ERROR_LOGS, EIssueType.DUPLICATE_SCRIPT_INCLUDES,
+        EIssueType.DUPLICATE_FIELDS, EIssueType.DUPLICATE_UPDATE_SETS,
+    ],
+    [ECategory.UPGRADABILITY]: [
+        EIssueType.LAST_SYSTEM_UPGRADE, EIssueType.REPORT_3_MONTHS,
+    ],
+    [ECategory.SECURITY]: [
+        EIssueType.ACL, EIssueType.DATABASE_LOOKUPS_IN_ACCESS_CONTROL_RULES,
+        EIssueType.GLOBAL_BUSINESS_RULES, EIssueType.SCRIPT_INCLUDE_REPORTS,
+        EIssueType.ASYNC_AJAX_METHODS, EIssueType.SCRIPT_INCLUDE_NO_ACL
+    ],
+    [ECategory.PERFORMANCE]: [
+        EIssueType.SLOW_QUERIES, EIssueType.SLOW_SCRIPTS, EIssueType.LONG_RUNNING_REPORTS,
+        EIssueType.LARGE_TABLES, EIssueType.INSERTS_IN_BUSINESS_RULES,
+    ],
 };
