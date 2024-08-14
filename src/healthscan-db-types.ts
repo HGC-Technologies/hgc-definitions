@@ -5,6 +5,7 @@ export enum ECategory {
     SECURITY = 4,
     PERFORMANCE = 5,
 }
+
 export const CategoryTitleMap: Record<ECategory, string> = {
     [ECategory.UX_UI]: "UX and UI",
     [ECategory.MANAGEABILITY]: "Manageability",
@@ -29,6 +30,12 @@ export enum EIssueType {
     DUPLICATE_FIELDS = 13,
     SCRIPT_INCLUDE_REPORTS = 14,
     TOO_MANY_CHOICES = 15,
+    ASYNC_AJAX_METHODS = 16,
+    DUPLICATE_UPDATE_SETS = 17,
+    INSERTS_IN_BUSINESS_RULES = 18,
+    LAST_SYSTEM_UPGRADE = 19,
+    REPORT_3_MONTHS = 20,
+    SCRIPT_INCLUDE_NO_ACL = 21,
 };
 
 export const IssueTypeTitleMap: Record<EIssueType, string> = {
@@ -46,5 +53,11 @@ export const IssueTypeTitleMap: Record<EIssueType, string> = {
     [EIssueType.DUPLICATE_SCRIPT_INCLUDES]: "Deplicate Script Includes",
     [EIssueType.DUPLICATE_FIELDS]: "Duplicate Fields",
     [EIssueType.SCRIPT_INCLUDE_REPORTS]: "Script Includes Reports",
-    [EIssueType.TOO_MANY_CHOICES]: "Too Many Choices"
+    [EIssueType.TOO_MANY_CHOICES]: "Too Many Choices",
+    [EIssueType.ASYNC_AJAX_METHODS]: "Asynchronous AJAX Methods",
+    [EIssueType.DUPLICATE_UPDATE_SETS]: "Duplicate Update Sets",
+    [EIssueType.INSERTS_IN_BUSINESS_RULES]: "Inserts in Business Rules",
+    [EIssueType.LAST_SYSTEM_UPGRADE]: "Last System Upgrade",
+    [EIssueType.REPORT_3_MONTHS]: "Report Three Months (??)", // this title aint clear xd
+    [EIssueType.SCRIPT_INCLUDE_NO_ACL]: "Script Include No ACL (??)", // need a better title here too
 };

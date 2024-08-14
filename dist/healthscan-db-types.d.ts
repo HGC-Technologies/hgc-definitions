@@ -21,6 +21,12 @@ export declare enum EIssueType {
     DUPLICATE_SCRIPT_INCLUDES = 12,
     DUPLICATE_FIELDS = 13,
     SCRIPT_INCLUDE_REPORTS = 14,
-    TOO_MANY_CHOICES = 15
+    TOO_MANY_CHOICES = 15,
+    ASYNC_AJAX_METHODS = 16,
+    DUPLICATE_UPDATE_SETS = 17,
+    INSERTS_IN_BUSINESS_RULES = 18,
+    LAST_SYSTEM_UPGRADE = 19,
+    REPORT_3_MONTHS = 20,
+    SCRIPT_INCLUDE_NO_ACL = 21
 }
 export declare const IssueTypeTitleMap: Record<EIssueType, string>;
