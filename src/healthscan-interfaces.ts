@@ -170,3 +170,23 @@ export interface IPDFSlowScriptsData {
       tableName:string
     }>;
   }
+
+  export interface IJsonData {
+    ACLDBLookupData ?: IPDFACLDBLookupData[],
+    ACLData ?: IPDFACLData[],
+    DuplicateFieldData ?: IPDFDuplicateFieldData[],
+    SlowQueryData ?: IPDFSlowQueryData,
+    LargeTablesData ?: IPDFLargeTablesData,
+    LongTitlesData ?: IPDFLongTitlesData,
+    GlobalUIScriptData?: IPDFUIScriptData[],
+    BusyFormsData ?: IPDFBusyFormsData[],
+    SlowScriptsData ?: IPDFSlowScriptsData,
+    GlobalBRScriptData ?: IPDFBRScriptData[],
+    instanceErrorData ?: IPDFInstanceErrorData,
+    LongReportData ?: IPDFLongReportData,
+    DuplicateScriptIncludes ?: IPDFDuplicateScriptIncludes[],
+    ScriptIncludeData ?: ScriptIncludeData,
+    ReportsNotRunFor3MonthData ?: ReportThreeMonthData,
+    DuplicateUpdatesetData ?: DuplicateUpdatesetData,
+    syschoiceAnalyzerData ?: IPDSyschoiceAnalyzerData
+  }
