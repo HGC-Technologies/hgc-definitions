@@ -189,7 +189,7 @@ export interface IPDFSlowScriptsData {
     ReportsNotRunFor3MonthData ?: ReportThreeMonthData,
     DuplicateUpdatesetData ?: DuplicateUpdatesetData,
     syschoiceAnalyzerData ?: IPDSyschoiceAnalyzerData,
-    SAMReport ?: IAggregatedSAMData
+    SAMReport ?: IAggregatedSAMData[]
   }
 
   export interface IAggregatedSAMData {
