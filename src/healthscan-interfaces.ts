@@ -188,5 +188,16 @@ export interface IPDFSlowScriptsData {
     ScriptIncludeData ?: ScriptIncludeData,
     ReportsNotRunFor3MonthData ?: ReportThreeMonthData,
     DuplicateUpdatesetData ?: DuplicateUpdatesetData,
-    syschoiceAnalyzerData ?: IPDSyschoiceAnalyzerData
+    syschoiceAnalyzerData ?: IPDSyschoiceAnalyzerData,
+    SAMReport ?: IAggregatedSAMData
+  }
+
+  interface IAggregatedSAMData {
+    softwareName: string;
+    version: string;
+    installationCount: number;
+    complianceStatus: string;
+    licenseExpiryDate: string;
+    assignedUsersCount?: number;
+    assignedDevicesCount?: number;
   }
