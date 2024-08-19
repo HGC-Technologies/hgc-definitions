@@ -178,5 +178,6 @@ export interface IAggregatedSAMData {
     licenseExpiryDate: string;
     assignedUsersCount?: number;
     assignedDevicesCount?: number;
+    totalCost?: number;
 }
 export {};

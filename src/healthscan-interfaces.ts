@@ -200,4 +200,5 @@ export interface IPDFSlowScriptsData {
     licenseExpiryDate: string;
     assignedUsersCount?: number;
     assignedDevicesCount?: number;
+    totalCost?: number;
   }
