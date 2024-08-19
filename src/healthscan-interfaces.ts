@@ -192,7 +192,7 @@ export interface IPDFSlowScriptsData {
     SAMReport ?: IAggregatedSAMData
   }
 
-  interface IAggregatedSAMData {
+  export interface IAggregatedSAMData {
     softwareName: string;
     version: string;
     installationCount: number;

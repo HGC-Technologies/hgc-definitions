@@ -170,7 +170,7 @@ export interface IJsonData {
     syschoiceAnalyzerData?: IPDSyschoiceAnalyzerData;
     SAMReport?: IAggregatedSAMData;
 }
-interface IAggregatedSAMData {
+export interface IAggregatedSAMData {
     softwareName: string;
     version: string;
     installationCount: number;
