@@ -39,6 +39,7 @@ var EIssueType;
     EIssueType[EIssueType["LAST_SYSTEM_UPGRADE"] = 19] = "LAST_SYSTEM_UPGRADE";
     EIssueType[EIssueType["REPORT_3_MONTHS"] = 20] = "REPORT_3_MONTHS";
     EIssueType[EIssueType["SCRIPT_INCLUDE_NO_ACL"] = 21] = "SCRIPT_INCLUDE_NO_ACL";
+    EIssueType[EIssueType["SAM_REPORT"] = 22] = "SAM_REPORT";
 })(EIssueType || (exports.EIssueType = EIssueType = {}));
 ;
 exports.IssueTypeTitleMap = {
@@ -63,6 +64,7 @@ exports.IssueTypeTitleMap = {
     [EIssueType.LAST_SYSTEM_UPGRADE]: "Last System Upgrade",
     [EIssueType.REPORT_3_MONTHS]: "Report Three Months (??)", // this title aint clear xd
     [EIssueType.SCRIPT_INCLUDE_NO_ACL]: "Script Include No ACL (??)", // need a better title here too
+    [EIssueType.SAM_REPORT]: "Sofware asset management report"
 };
 exports.CategoryToIssueTypesMap = {
     [ECategory.UX_UI]: [
@@ -72,6 +74,7 @@ exports.CategoryToIssueTypesMap = {
     [ECategory.MANAGEABILITY]: [
         EIssueType.INSTANCE_ERROR_LOGS, EIssueType.DUPLICATE_SCRIPT_INCLUDES,
         EIssueType.DUPLICATE_FIELDS, EIssueType.DUPLICATE_UPDATE_SETS,
+        EIssueType.SAM_REPORT
     ],
     [ECategory.UPGRADABILITY]: [
         EIssueType.LAST_SYSTEM_UPGRADE, EIssueType.REPORT_3_MONTHS,
