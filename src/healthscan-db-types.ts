@@ -36,7 +36,8 @@ export enum EIssueType {
     LAST_SYSTEM_UPGRADE = 19,
     REPORT_3_MONTHS = 20,
     SCRIPT_INCLUDE_NO_ACL = 21,
-    SAM_REPORT = 22
+    SAM_REPORT = 22,
+    HAM_REPORT = 23
 };
 
 export const IssueTypeTitleMap: Record<EIssueType, string> = {
@@ -61,7 +62,8 @@ export const IssueTypeTitleMap: Record<EIssueType, string> = {
     [EIssueType.LAST_SYSTEM_UPGRADE]: "Last System Upgrade",
     [EIssueType.REPORT_3_MONTHS]: "Report Three Months (??)", // this title aint clear xd
     [EIssueType.SCRIPT_INCLUDE_NO_ACL]: "Script Include No ACL (??)", // need a better title here too
-    [EIssueType.SAM_REPORT]: "Sofware asset management report"
+    [EIssueType.SAM_REPORT]: "Sofware asset management report",
+    [EIssueType.HAM_REPORT]:"Hardware asset management report"
 };
 
 export const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]> = {
@@ -73,7 +75,7 @@ export const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]> = {
     [ECategory.MANAGEABILITY]: [
         EIssueType.INSTANCE_ERROR_LOGS, EIssueType.DUPLICATE_SCRIPT_INCLUDES,
         EIssueType.DUPLICATE_FIELDS, EIssueType.DUPLICATE_UPDATE_SETS,
-        EIssueType.SAM_REPORT
+        EIssueType.SAM_REPORT,EIssueType.HAM_REPORT
     ],
 
     [ECategory.UPGRADABILITY]: [
