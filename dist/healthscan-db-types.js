@@ -41,6 +41,7 @@ var EIssueType;
     EIssueType[EIssueType["SCRIPT_INCLUDE_NO_ACL"] = 21] = "SCRIPT_INCLUDE_NO_ACL";
     EIssueType[EIssueType["SAM_REPORT"] = 22] = "SAM_REPORT";
     EIssueType[EIssueType["HAM_REPORT"] = 23] = "HAM_REPORT";
+    EIssueType[EIssueType["ADMIN_ROLE_REPORT"] = 24] = "ADMIN_ROLE_REPORT";
 })(EIssueType || (exports.EIssueType = EIssueType = {}));
 ;
 exports.IssueTypeTitleMap = {
@@ -66,7 +67,8 @@ exports.IssueTypeTitleMap = {
     [EIssueType.REPORT_3_MONTHS]: "Report Three Months (??)", // this title aint clear xd
     [EIssueType.SCRIPT_INCLUDE_NO_ACL]: "Script Include No ACL (??)", // need a better title here too
     [EIssueType.SAM_REPORT]: "Sofware asset management report",
-    [EIssueType.HAM_REPORT]: "Hardware asset management report"
+    [EIssueType.HAM_REPORT]: "Hardware asset management report",
+    [EIssueType.ADMIN_ROLE_REPORT]: "No more than 5 admin in one instance"
 };
 exports.CategoryToIssueTypesMap = {
     [ECategory.UX_UI]: [
@@ -84,7 +86,7 @@ exports.CategoryToIssueTypesMap = {
     [ECategory.SECURITY]: [
         EIssueType.ACL, EIssueType.DATABASE_LOOKUPS_IN_ACCESS_CONTROL_RULES,
         EIssueType.GLOBAL_BUSINESS_RULES, EIssueType.SCRIPT_INCLUDE_REPORTS,
-        EIssueType.ASYNC_AJAX_METHODS, EIssueType.SCRIPT_INCLUDE_NO_ACL
+        EIssueType.ASYNC_AJAX_METHODS, EIssueType.SCRIPT_INCLUDE_NO_ACL, EIssueType.ADMIN_ROLE_REPORT
     ],
     [ECategory.PERFORMANCE]: [
         EIssueType.SLOW_QUERIES, EIssueType.SLOW_SCRIPTS, EIssueType.LONG_RUNNING_REPORTS,

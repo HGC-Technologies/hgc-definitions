@@ -37,7 +37,8 @@ export enum EIssueType {
     REPORT_3_MONTHS = 20,
     SCRIPT_INCLUDE_NO_ACL = 21,
     SAM_REPORT = 22,
-    HAM_REPORT = 23
+    HAM_REPORT = 23,
+    ADMIN_ROLE_REPORT=24
 };
 
 export const IssueTypeTitleMap: Record<EIssueType, string> = {
@@ -63,7 +64,8 @@ export const IssueTypeTitleMap: Record<EIssueType, string> = {
     [EIssueType.REPORT_3_MONTHS]: "Report Three Months (??)", // this title aint clear xd
     [EIssueType.SCRIPT_INCLUDE_NO_ACL]: "Script Include No ACL (??)", // need a better title here too
     [EIssueType.SAM_REPORT]: "Sofware asset management report",
-    [EIssueType.HAM_REPORT]:"Hardware asset management report"
+    [EIssueType.HAM_REPORT]:"Hardware asset management report",
+    [EIssueType.ADMIN_ROLE_REPORT]:"No more than 5 admin in one instance"
 };
 
 export const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]> = {
@@ -85,7 +87,7 @@ export const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]> = {
     [ECategory.SECURITY]: [
         EIssueType.ACL, EIssueType.DATABASE_LOOKUPS_IN_ACCESS_CONTROL_RULES, 
         EIssueType.GLOBAL_BUSINESS_RULES, EIssueType.SCRIPT_INCLUDE_REPORTS,
-        EIssueType.ASYNC_AJAX_METHODS, EIssueType.SCRIPT_INCLUDE_NO_ACL
+        EIssueType.ASYNC_AJAX_METHODS, EIssueType.SCRIPT_INCLUDE_NO_ACL,EIssueType.ADMIN_ROLE_REPORT
     ],
 
     [ECategory.PERFORMANCE]: [
