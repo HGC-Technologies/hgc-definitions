@@ -171,6 +171,11 @@ export interface IPDFSlowScriptsData {
     }>;
   }
 
+  export interface IPDAdminRoleData {
+     role:string,
+     count:number
+  }
+
   export interface IJsonData {
     ACLDBLookupData ?: IPDFACLDBLookupData[],
     ACLData ?: IPDFACLData[],
