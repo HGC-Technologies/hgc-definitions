@@ -173,6 +173,7 @@ export interface IJsonData {
     DuplicateUpdatesetData?: DuplicateUpdatesetData;
     syschoiceAnalyzerData?: IPDSyschoiceAnalyzerData;
     SAMReport?: IAggregatedSAMData[];
+    RoleReport?: IPDAdminRoleData;
 }
 export interface IAggregatedSAMData {
     softwareName: string;
