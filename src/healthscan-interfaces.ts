@@ -197,7 +197,7 @@ export interface IPDFSlowScriptsData {
     DuplicateUpdatesetData ?: DuplicateUpdatesetData,
     syschoiceAnalyzerData ?: IPDSyschoiceAnalyzerData,
     SAMReport ?: IAggregatedSAMData[]
-    RoleReport?:IPDAdminRoleData
+    RoleReport?:IPDAdminRoleData[]
   }
 
   export interface IAggregatedSAMData {
