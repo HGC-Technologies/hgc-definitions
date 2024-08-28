@@ -151,8 +151,10 @@ export interface IPDSyschoiceAnalyzerData {
     }>;
 }
 export interface IPDAdminRoleData {
-    role: string;
-    count: number;
+    name: string;
+    email: string;
+    url: string;
+    lastLogin: string;
 }
 export interface IJsonData {
     ACLDBLookupData?: IPDFACLDBLookupData[];
@@ -173,7 +175,7 @@ export interface IJsonData {
     DuplicateUpdatesetData?: DuplicateUpdatesetData;
     syschoiceAnalyzerData?: IPDSyschoiceAnalyzerData;
     SAMReport?: IAggregatedSAMData[];
-    RoleReport?: IPDAdminRoleData;
+    RoleReport?: IPDAdminRoleData[];
 }
 export interface IAggregatedSAMData {
     softwareName: string;
