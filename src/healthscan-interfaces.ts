@@ -172,8 +172,10 @@ export interface IPDFSlowScriptsData {
   }
 
   export interface IPDAdminRoleData {
-     role:string,
-     count:number
+    name:string,
+  email:string,
+  url:string,
+  lastLogin:string
   }
 
   export interface IJsonData {
