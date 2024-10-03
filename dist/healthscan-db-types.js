@@ -56,7 +56,7 @@ exports.IssueTypeTitleMap = {
     [EIssueType.GLOBAL_BUSINESS_RULES]: "Global Business Rules",
     [EIssueType.INSTANCE_ERROR_LOGS]: "Instance Error Logs",
     [EIssueType.LONG_RUNNING_REPORTS]: "Long Running Reports",
-    [EIssueType.DUPLICATE_SCRIPT_INCLUDES]: "Deplicate Script Includes",
+    [EIssueType.DUPLICATE_SCRIPT_INCLUDES]: "Duplicate Script Includes",
     [EIssueType.DUPLICATE_FIELDS]: "Duplicate Fields",
     [EIssueType.SCRIPT_INCLUDE_REPORTS]: "Script Includes Reports",
     [EIssueType.TOO_MANY_CHOICES]: "Too Many Choices",
