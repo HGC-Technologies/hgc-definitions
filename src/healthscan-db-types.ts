@@ -38,7 +38,8 @@ export enum EIssueType {
     SCRIPT_INCLUDE_NO_ACL = 21,
     SAM_REPORT = 22,
     HAM_REPORT = 23,
-    ADMIN_ROLE_REPORT=24
+    ADMIN_ROLE_REPORT=24,
+    INSTANCE_LICENSES=25
 };
 
 export const IssueTypeTitleMap: Record<EIssueType, string> = {
@@ -65,7 +66,8 @@ export const IssueTypeTitleMap: Record<EIssueType, string> = {
     [EIssueType.SCRIPT_INCLUDE_NO_ACL]: "Script Include No ACL (??)", // need a better title here too
     [EIssueType.SAM_REPORT]: "Sofware asset management report",
     [EIssueType.HAM_REPORT]:"Hardware asset management report",
-    [EIssueType.ADMIN_ROLE_REPORT]:"No more than 5 admin in one instance"
+    [EIssueType.ADMIN_ROLE_REPORT]:"No more than 5 admin in one instance",
+    [EIssueType.INSTANCE_LICENSES]:"Licenses not being used."
 };
 
 export const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]> = {
@@ -81,7 +83,7 @@ export const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]> = {
     ],
 
     [ECategory.UPGRADABILITY]: [
-        EIssueType.LAST_SYSTEM_UPGRADE, EIssueType.REPORT_3_MONTHS,
+        EIssueType.LAST_SYSTEM_UPGRADE, EIssueType.REPORT_3_MONTHS,EIssueType.INSTANCE_LICENSES
     ],
 
     [ECategory.SECURITY]: [
@@ -92,6 +94,6 @@ export const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]> = {
 
     [ECategory.PERFORMANCE]: [
         EIssueType.SLOW_QUERIES, EIssueType.SLOW_SCRIPTS, EIssueType.LONG_RUNNING_REPORTS,
-        EIssueType.LARGE_TABLES, EIssueType.INSERTS_IN_BUSINESS_RULES,
+        EIssueType.LARGE_TABLES, EIssueType.INSERTS_IN_BUSINESS_RULES
     ],
 }
