@@ -39,7 +39,8 @@ export enum EIssueType {
     SAM_REPORT = 22,
     HAM_REPORT = 23,
     ADMIN_ROLE_REPORT=24,
-    INSTANCE_LICENSES=25
+    INSTANCE_LICENSES=25,
+    UNDERUSED_LICENSES=26
 };
 
 export const IssueTypeTitleMap: Record<EIssueType, string> = {
@@ -67,7 +68,8 @@ export const IssueTypeTitleMap: Record<EIssueType, string> = {
     [EIssueType.SAM_REPORT]: "Sofware asset management report",
     [EIssueType.HAM_REPORT]:"Hardware asset management report",
     [EIssueType.ADMIN_ROLE_REPORT]:"No more than 5 admin in one instance",
-    [EIssueType.INSTANCE_LICENSES]:"Licenses not being used."
+    [EIssueType.INSTANCE_LICENSES]:"Licenses not being used.",
+    [EIssueType.UNDERUSED_LICENSES]: "Underutilized licenses"
 };
 
 export const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]> = {
@@ -83,7 +85,7 @@ export const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]> = {
     ],
 
     [ECategory.UPGRADABILITY]: [
-        EIssueType.LAST_SYSTEM_UPGRADE, EIssueType.REPORT_3_MONTHS,EIssueType.INSTANCE_LICENSES
+        EIssueType.LAST_SYSTEM_UPGRADE, EIssueType.REPORT_3_MONTHS,EIssueType.INSTANCE_LICENSES, EIssueType.UNDERUSED_LICENSES
     ],
 
     [ECategory.SECURITY]: [
