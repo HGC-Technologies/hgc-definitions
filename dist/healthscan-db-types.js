@@ -43,6 +43,7 @@ var EIssueType;
     EIssueType[EIssueType["HAM_REPORT"] = 23] = "HAM_REPORT";
     EIssueType[EIssueType["ADMIN_ROLE_REPORT"] = 24] = "ADMIN_ROLE_REPORT";
     EIssueType[EIssueType["INSTANCE_LICENSES"] = 25] = "INSTANCE_LICENSES";
+    EIssueType[EIssueType["UNDERUSED_LICENSES"] = 26] = "UNDERUSED_LICENSES";
 })(EIssueType || (exports.EIssueType = EIssueType = {}));
 ;
 exports.IssueTypeTitleMap = {
@@ -70,7 +71,8 @@ exports.IssueTypeTitleMap = {
     [EIssueType.SAM_REPORT]: "Sofware asset management report",
     [EIssueType.HAM_REPORT]: "Hardware asset management report",
     [EIssueType.ADMIN_ROLE_REPORT]: "No more than 5 admin in one instance",
-    [EIssueType.INSTANCE_LICENSES]: "Licenses not being used."
+    [EIssueType.INSTANCE_LICENSES]: "Licenses not being used.",
+    [EIssueType.UNDERUSED_LICENSES]: "Underutilized licenses"
 };
 exports.CategoryToIssueTypesMap = {
     [ECategory.UX_UI]: [
@@ -83,7 +85,7 @@ exports.CategoryToIssueTypesMap = {
         EIssueType.SAM_REPORT, EIssueType.HAM_REPORT
     ],
     [ECategory.UPGRADABILITY]: [
-        EIssueType.LAST_SYSTEM_UPGRADE, EIssueType.REPORT_3_MONTHS, EIssueType.INSTANCE_LICENSES
+        EIssueType.LAST_SYSTEM_UPGRADE, EIssueType.REPORT_3_MONTHS, EIssueType.INSTANCE_LICENSES, EIssueType.UNDERUSED_LICENSES
     ],
     [ECategory.SECURITY]: [
         EIssueType.ACL, EIssueType.DATABASE_LOOKUPS_IN_ACCESS_CONTROL_RULES,

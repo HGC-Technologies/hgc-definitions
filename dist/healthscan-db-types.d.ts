@@ -31,7 +31,8 @@ export declare enum EIssueType {
     SAM_REPORT = 22,
     HAM_REPORT = 23,
     ADMIN_ROLE_REPORT = 24,
-    INSTANCE_LICENSES = 25
+    INSTANCE_LICENSES = 25,
+    UNDERUSED_LICENSES = 26
 }
 export declare const IssueTypeTitleMap: Record<EIssueType, string>;
 export declare const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]>;
