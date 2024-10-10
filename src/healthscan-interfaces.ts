@@ -219,5 +219,5 @@ export interface IPDFSlowScriptsData {
     expired: boolean,
     totalLicenses: number | null,
     totalUsed: number | null,
-    isUnderUsed: number | null
+    isUnderUsed: boolean
 }

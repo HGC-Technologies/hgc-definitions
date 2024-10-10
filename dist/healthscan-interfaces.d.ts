@@ -195,6 +195,6 @@ export interface ILowUsageLicence {
     expired: boolean;
     totalLicenses: number | null;
     totalUsed: number | null;
-    isUnderUsed: number | null;
+    isUnderUsed: boolean;
 }
 export {};
