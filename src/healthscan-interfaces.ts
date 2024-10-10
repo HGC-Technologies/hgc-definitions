@@ -218,5 +218,6 @@ export interface IPDFSlowScriptsData {
     recommendation: string,
     expired: boolean,
     totalLicenses: number | null,
-    totalUsed: number | null
+    totalUsed: number | null,
+    isUnderUsed: number | null
 }
