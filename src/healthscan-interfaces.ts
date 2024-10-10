@@ -197,7 +197,8 @@ export interface IPDFSlowScriptsData {
     DuplicateUpdatesetData ?: DuplicateUpdatesetData,
     syschoiceAnalyzerData ?: IPDSyschoiceAnalyzerData,
     SAMReport ?: IAggregatedSAMData[]
-    RoleReport?:IPDAdminRoleData[]
+    RoleReport?:IPDAdminRoleData[],
+    UnderUsedLicenses?: ILowUsageLicence[]
   }
 
   export interface IAggregatedSAMData {
@@ -210,3 +211,12 @@ export interface IPDFSlowScriptsData {
     assignedDevicesCount?: number;
     totalCost?: number;
   }
+
+  export interface ILowUsageLicence {
+    moduleName: string,
+    usagePercentage: string,
+    recommendation: string,
+    expired: boolean,
+    totalLicenses: number | null,
+    totalUsed: number | null
+}

@@ -1,6 +1,6 @@
 {
   "name": "hgc-definitions",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",

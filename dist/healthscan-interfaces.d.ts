@@ -176,6 +176,7 @@ export interface IJsonData {
     syschoiceAnalyzerData?: IPDSyschoiceAnalyzerData;
     SAMReport?: IAggregatedSAMData[];
     RoleReport?: IPDAdminRoleData[];
+    UnderUsedLicenses?: ILowUsageLicence[];
 }
 export interface IAggregatedSAMData {
     softwareName: string;
@@ -186,5 +187,13 @@ export interface IAggregatedSAMData {
     assignedUsersCount?: number;
     assignedDevicesCount?: number;
     totalCost?: number;
+}
+export interface ILowUsageLicence {
+    moduleName: string;
+    usagePercentage: string;
+    recommendation: string;
+    expired: boolean;
+    totalLicenses: number | null;
+    totalUsed: number | null;
 }
 export {};
