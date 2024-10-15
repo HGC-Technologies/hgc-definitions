@@ -213,11 +213,13 @@ export interface IPDFSlowScriptsData {
   }
 
   export interface ILowUsageLicence {
-    moduleName: string,
-    usagePercentage: string,
-    recommendation: string,
-    expired: boolean,
-    totalLicenses: number | null,
-    totalUsed: number | null,
-    isUnderUsed: boolean
+    moduleName?: string,
+    usagePercentage?: string,
+    recommendation?: string,
+    expired?: boolean,
+    totalLicenses?: number | null,
+    totalUsed?: number | null,
+    isUnderUsed?: boolean
+    pool?: boolean,
+    poolLicences?: any[]
 }
