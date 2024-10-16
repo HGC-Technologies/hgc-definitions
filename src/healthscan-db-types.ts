@@ -40,10 +40,13 @@ export enum EIssueType {
     HAM_REPORT = 23,
     ADMIN_ROLE_REPORT=24,
     INSTANCE_LICENSES=25,
-    UNDERUSED_LICENSES=26
+    UNDERUSED_LICENSES=26,
+    MONTHLY_REPORT=27
 };
 
-export const IssueTypeTitleMap: Record<EIssueType, string> = {
+export type EIssueTypeExcludeMonthly = Exclude<EIssueType, EIssueType.MONTHLY_REPORT>;
+
+export const IssueTypeTitleMap: Record<EIssueTypeExcludeMonthly, string> = {
     [EIssueType.SLOW_QUERIES]: "Slow Queries",
     [EIssueType.LARGE_TABLES]: "Large Tables",
     [EIssueType.LONG_TITLES]: "Long Titles",

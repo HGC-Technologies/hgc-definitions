@@ -44,6 +44,7 @@ var EIssueType;
     EIssueType[EIssueType["ADMIN_ROLE_REPORT"] = 24] = "ADMIN_ROLE_REPORT";
     EIssueType[EIssueType["INSTANCE_LICENSES"] = 25] = "INSTANCE_LICENSES";
     EIssueType[EIssueType["UNDERUSED_LICENSES"] = 26] = "UNDERUSED_LICENSES";
+    EIssueType[EIssueType["MONTHLY_REPORT"] = 27] = "MONTHLY_REPORT";
 })(EIssueType || (exports.EIssueType = EIssueType = {}));
 ;
 exports.IssueTypeTitleMap = {
