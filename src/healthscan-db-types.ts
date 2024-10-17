@@ -75,7 +75,7 @@ export const IssueTypeTitleMap: Record<EIssueTypeExcludeMonthly, string> = {
     [EIssueType.UNDERUSED_LICENSES]: "Underutilized licenses"
 };
 
-export const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]> = {
+export const CategoryToIssueTypesMap: Record<ECategory, EIssueTypeExcludeMonthly[]> = {
     [ECategory.UX_UI]: [
         EIssueType.LONG_TITLES, EIssueType.GLOBAL_UI_SCRIPTS, EIssueType.BUSY_FORMS,
         EIssueType.TOO_MANY_CHOICES,

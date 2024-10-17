@@ -37,4 +37,4 @@ export declare enum EIssueType {
 }
 export type EIssueTypeExcludeMonthly = Exclude<EIssueType, EIssueType.MONTHLY_REPORT>;
 export declare const IssueTypeTitleMap: Record<EIssueTypeExcludeMonthly, string>;
-export declare const CategoryToIssueTypesMap: Record<ECategory, EIssueType[]>;
+export declare const CategoryToIssueTypesMap: Record<ECategory, EIssueTypeExcludeMonthly[]>;
