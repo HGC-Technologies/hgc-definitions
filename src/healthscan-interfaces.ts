@@ -146,9 +146,12 @@ export interface ScriptIncludeData {
     maxDisplayedRecords: number;
     totalQueries: number;
     slowQueries: Array<{
+        url: string;
         execTimeInMS: number;
         query: string;
         hhmmss: string;
+        count: number;
+        lastRunDate: string;
     }>;
 }
 

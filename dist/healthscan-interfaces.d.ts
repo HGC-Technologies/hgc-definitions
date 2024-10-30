@@ -129,9 +129,12 @@ export interface IPDFSlowQueryData {
     maxDisplayedRecords: number;
     totalQueries: number;
     slowQueries: Array<{
+        url: string;
         execTimeInMS: number;
         query: string;
         hhmmss: string;
+        count: number;
+        lastRunDate: string;
     }>;
 }
 export interface IPDFSlowScriptsData {
