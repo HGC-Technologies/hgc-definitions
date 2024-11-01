@@ -16,3 +16,4 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./healthscan-db-types"), exports);
 __exportStar(require("./healthscan-interfaces"), exports);
+__exportStar(require("./healthscan-types"), exports);
