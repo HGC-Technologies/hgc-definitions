@@ -54,6 +54,11 @@ export interface DuplicateUpdatesetData {
         occurrence: number;
     }>;
 }
+export interface AttachmentStats {
+    contentType: string;
+    sizeMB: number;
+    count: number;
+}
 export interface IPDFBRScriptData {
     name: string;
     id: string;
