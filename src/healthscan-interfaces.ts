@@ -60,7 +60,7 @@ export interface DuplicateUpdatesetData {
   }>;
 }
 
-export interface AttachmentStats {
+export interface IAttachmentStats {
   contentType: string,
   sizeMB: number,
   count: number
@@ -207,7 +207,8 @@ export interface IJsonData {
   syschoiceAnalyzerData?: IPDSyschoiceAnalyzerData,
   SAMReport?: IAggregatedSAMData[]
   RoleReport?: IPDAdminRoleData[],
-  UnderUsedLicenses?: ILowUsageLicence[]
+  UnderUsedLicenses?: ILowUsageLicence[],
+  AttachmentStats?: IAttachmentStats
 }
 
 export interface IAggregatedSAMData {
