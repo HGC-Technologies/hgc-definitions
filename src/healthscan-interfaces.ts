@@ -92,12 +92,12 @@ export interface IPDFInstanceErrorData {
 interface TableEntries {
   tableName: string,
   recordCount: number
+  URL: string;
 }
 export interface IPDFLargeTablesData {
   maxDisplayedRecords: number;
   largeTableThreshold: number;
   largeTables: Array<TableEntries>;
-  URL: string;
 }
 
 interface ReportQueries {
@@ -123,8 +123,8 @@ export interface IPDFLongTitlesData {
   affectedRecords: Array<{
     title: string;
     tableName: string;
+    URL: string;
   }>;
-  URL: string;
 }
 
 export interface ReportThreeMonthData {
