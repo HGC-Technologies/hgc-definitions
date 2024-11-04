@@ -96,7 +96,8 @@ interface TableEntries {
 export interface IPDFLargeTablesData {
   maxDisplayedRecords: number;
   largeTableThreshold: number;
-  largeTables: Array<TableEntries>
+  largeTables: Array<TableEntries>;
+  URL: string;
 }
 
 interface ReportQueries {
@@ -122,7 +123,8 @@ export interface IPDFLongTitlesData {
   affectedRecords: Array<{
     title: string;
     tableName: string;
-  }>
+  }>;
+  URL: string;
 }
 
 export interface ReportThreeMonthData {
@@ -167,6 +169,7 @@ export interface IPDFSlowScriptsData {
   slowScripts: Array<{
     label: string;
     avgExecTimeInMS: number;
+    URL: string;
   }>;
 }
 
