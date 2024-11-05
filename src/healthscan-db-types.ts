@@ -41,7 +41,8 @@ export enum EIssueType {
     ADMIN_ROLE_REPORT=24,
     INSTANCE_LICENSES=25,
     UNDERUSED_LICENSES=26,
-    MONTHLY_REPORT=27
+    MONTHLY_REPORT=27,
+    ATTACHMENT_STATS = 28
 };
 
 export type EIssueTypeExcludeMonthly = Exclude<EIssueType, EIssueType.MONTHLY_REPORT>;
@@ -72,7 +73,8 @@ export const IssueTypeTitleMap: Record<EIssueTypeExcludeMonthly, string> = {
     [EIssueType.HAM_REPORT]:"Hardware asset management report",
     [EIssueType.ADMIN_ROLE_REPORT]:"No more than 5 admin in one instance",
     [EIssueType.INSTANCE_LICENSES]:"Licenses not being used.",
-    [EIssueType.UNDERUSED_LICENSES]: "Underutilized licenses"
+    [EIssueType.UNDERUSED_LICENSES]: "Underutilized licenses",
+    [EIssueType.ATTACHMENT_STATS]:"Attachment stats"
 };
 
 export const CategoryToIssueTypesMap: Record<ECategory, EIssueTypeExcludeMonthly[]> = {
@@ -99,6 +101,6 @@ export const CategoryToIssueTypesMap: Record<ECategory, EIssueTypeExcludeMonthly
 
     [ECategory.PERFORMANCE]: [
         EIssueType.SLOW_QUERIES, EIssueType.SLOW_SCRIPTS, EIssueType.LONG_RUNNING_REPORTS,
-        EIssueType.LARGE_TABLES, EIssueType.INSERTS_IN_BUSINESS_RULES
+        EIssueType.LARGE_TABLES, EIssueType.INSERTS_IN_BUSINESS_RULES, EIssueType.ATTACHMENT_STATS
     ],
 }

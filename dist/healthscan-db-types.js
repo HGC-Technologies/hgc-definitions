@@ -45,6 +45,7 @@ var EIssueType;
     EIssueType[EIssueType["INSTANCE_LICENSES"] = 25] = "INSTANCE_LICENSES";
     EIssueType[EIssueType["UNDERUSED_LICENSES"] = 26] = "UNDERUSED_LICENSES";
     EIssueType[EIssueType["MONTHLY_REPORT"] = 27] = "MONTHLY_REPORT";
+    EIssueType[EIssueType["ATTACHMENT_STATS"] = 28] = "ATTACHMENT_STATS";
 })(EIssueType || (exports.EIssueType = EIssueType = {}));
 ;
 exports.IssueTypeTitleMap = {
@@ -73,7 +74,8 @@ exports.IssueTypeTitleMap = {
     [EIssueType.HAM_REPORT]: "Hardware asset management report",
     [EIssueType.ADMIN_ROLE_REPORT]: "No more than 5 admin in one instance",
     [EIssueType.INSTANCE_LICENSES]: "Licenses not being used.",
-    [EIssueType.UNDERUSED_LICENSES]: "Underutilized licenses"
+    [EIssueType.UNDERUSED_LICENSES]: "Underutilized licenses",
+    [EIssueType.ATTACHMENT_STATS]: "Attachment stats"
 };
 exports.CategoryToIssueTypesMap = {
     [ECategory.UX_UI]: [
@@ -95,6 +97,6 @@ exports.CategoryToIssueTypesMap = {
     ],
     [ECategory.PERFORMANCE]: [
         EIssueType.SLOW_QUERIES, EIssueType.SLOW_SCRIPTS, EIssueType.LONG_RUNNING_REPORTS,
-        EIssueType.LARGE_TABLES, EIssueType.INSERTS_IN_BUSINESS_RULES
+        EIssueType.LARGE_TABLES, EIssueType.INSERTS_IN_BUSINESS_RULES, EIssueType.ATTACHMENT_STATS
     ],
 };
