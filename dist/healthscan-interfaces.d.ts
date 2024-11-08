@@ -77,6 +77,7 @@ export interface IPDFInstanceErrorData {
     errorTypes?: Array<{
         errorSource: string;
         errorCount: number;
+        URL: string;
     }>;
 }
 interface TableEntries {
