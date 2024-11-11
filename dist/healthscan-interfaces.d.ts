@@ -60,8 +60,9 @@ export interface IAttachmentStats {
     count: number;
 }
 export interface ISoftwareLicenseInformation {
-    name: string;
     id: string;
+    name: string;
+    state: string;
     licensesUsed: number;
     licensesAvailable: number;
     totalLicenses: number;
