@@ -46,6 +46,7 @@ var EIssueType;
     EIssueType[EIssueType["UNDERUSED_LICENSES"] = 26] = "UNDERUSED_LICENSES";
     EIssueType[EIssueType["MONTHLY_REPORT"] = 27] = "MONTHLY_REPORT";
     EIssueType[EIssueType["ATTACHMENT_STATS"] = 28] = "ATTACHMENT_STATS";
+    EIssueType[EIssueType["SOFTWARE_ENTITLEMENTS"] = 29] = "SOFTWARE_ENTITLEMENTS";
 })(EIssueType || (exports.EIssueType = EIssueType = {}));
 ;
 exports.IssueTypeTitleMap = {
@@ -75,7 +76,8 @@ exports.IssueTypeTitleMap = {
     [EIssueType.ADMIN_ROLE_REPORT]: "No more than 5 admin in one instance",
     [EIssueType.INSTANCE_LICENSES]: "Licenses not being used.",
     [EIssueType.UNDERUSED_LICENSES]: "Underutilized licenses",
-    [EIssueType.ATTACHMENT_STATS]: "Attachment stats"
+    [EIssueType.ATTACHMENT_STATS]: "Attachment stats",
+    [EIssueType.SOFTWARE_ENTITLEMENTS]: "Software Entitlements"
 };
 exports.CategoryToIssueTypesMap = {
     [ECategory.UX_UI]: [
@@ -85,7 +87,7 @@ exports.CategoryToIssueTypesMap = {
     [ECategory.MANAGEABILITY]: [
         EIssueType.INSTANCE_ERROR_LOGS, EIssueType.DUPLICATE_SCRIPT_INCLUDES,
         EIssueType.DUPLICATE_FIELDS, EIssueType.DUPLICATE_UPDATE_SETS,
-        EIssueType.SAM_REPORT, EIssueType.HAM_REPORT
+        EIssueType.SAM_REPORT, EIssueType.HAM_REPORT, EIssueType.SOFTWARE_ENTITLEMENTS
     ],
     [ECategory.UPGRADABILITY]: [
         EIssueType.LAST_SYSTEM_UPGRADE, EIssueType.REPORT_3_MONTHS, EIssueType.INSTANCE_LICENSES, EIssueType.UNDERUSED_LICENSES

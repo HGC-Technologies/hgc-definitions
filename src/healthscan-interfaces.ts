@@ -66,6 +66,14 @@ export interface IAttachmentStats {
   count: number
 }
 
+export interface ISoftwareLicenseInformation {
+  name: string;
+  id: string;
+  licensesUsed: number;
+  licensesAvailable: number;
+  totalLicenses: number;
+}
+
 export interface IPDFBRScriptData {
   name: string;
   id: string;

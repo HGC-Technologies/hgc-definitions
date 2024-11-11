@@ -42,7 +42,8 @@ export enum EIssueType {
     INSTANCE_LICENSES=25,
     UNDERUSED_LICENSES=26,
     MONTHLY_REPORT=27,
-    ATTACHMENT_STATS = 28
+    ATTACHMENT_STATS = 28,
+    SOFTWARE_ENTITLEMENTS = 29
 };
 
 export type EIssueTypeExcludeMonthly = Exclude<EIssueType, EIssueType.MONTHLY_REPORT>;
@@ -74,7 +75,8 @@ export const IssueTypeTitleMap: Record<EIssueTypeExcludeMonthly, string> = {
     [EIssueType.ADMIN_ROLE_REPORT]:"No more than 5 admin in one instance",
     [EIssueType.INSTANCE_LICENSES]:"Licenses not being used.",
     [EIssueType.UNDERUSED_LICENSES]: "Underutilized licenses",
-    [EIssueType.ATTACHMENT_STATS]:"Attachment stats"
+    [EIssueType.ATTACHMENT_STATS]:"Attachment stats",
+    [EIssueType.SOFTWARE_ENTITLEMENTS]:"Software Entitlements"
 };
 
 export const CategoryToIssueTypesMap: Record<ECategory, EIssueTypeExcludeMonthly[]> = {
@@ -86,7 +88,7 @@ export const CategoryToIssueTypesMap: Record<ECategory, EIssueTypeExcludeMonthly
     [ECategory.MANAGEABILITY]: [
         EIssueType.INSTANCE_ERROR_LOGS, EIssueType.DUPLICATE_SCRIPT_INCLUDES,
         EIssueType.DUPLICATE_FIELDS, EIssueType.DUPLICATE_UPDATE_SETS,
-        EIssueType.SAM_REPORT,EIssueType.HAM_REPORT
+        EIssueType.SAM_REPORT,EIssueType.HAM_REPORT,EIssueType.SOFTWARE_ENTITLEMENTS
     ],
 
     [ECategory.UPGRADABILITY]: [
