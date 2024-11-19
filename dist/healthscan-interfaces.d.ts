@@ -160,6 +160,9 @@ export interface IPDFSlowScriptsData {
         label: string;
         avgExecTimeInMS: number;
         URL: string;
+        lastUpdateDate: string;
+        lastRunDate: string;
+        count: string;
     }>;
 }
 export interface IPDSyschoiceAnalyzerData {
