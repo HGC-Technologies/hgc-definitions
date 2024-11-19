@@ -182,7 +182,7 @@ export interface IPDFSlowScriptsData {
     URL: string;
     lastUpdateDate: string;
     lastRunDate: string;
-    count: string;
+    count: number;
   }>;
 }
 
