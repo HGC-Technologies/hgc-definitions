@@ -129,6 +129,7 @@ export interface ReportThreeMonthData {
         table: string;
         query: string;
         created: string;
+        issue: "Not run in 3 months" | "Never run";
     }>;
 }
 export interface ScriptIncludeData {
