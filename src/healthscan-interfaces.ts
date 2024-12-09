@@ -143,6 +143,7 @@ export interface ReportThreeMonthData {
     reportName: string;
     table: string;
     query: string;
+    created: string
   }>;
 }
 
