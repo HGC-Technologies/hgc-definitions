@@ -69,8 +69,8 @@ exports.IssueTypeTitleMap = {
     [EIssueType.DUPLICATE_UPDATE_SETS]: "Duplicate Update Sets",
     [EIssueType.INSERTS_IN_BUSINESS_RULES]: "Inserts in Business Rules",
     [EIssueType.LAST_SYSTEM_UPGRADE]: "Last System Upgrade",
-    [EIssueType.REPORT_3_MONTHS]: "Report Three Months (??)", // this title aint clear xd
-    [EIssueType.SCRIPT_INCLUDE_NO_ACL]: "Script Include No ACL (??)", // need a better title here too
+    [EIssueType.REPORT_3_MONTHS]: "Inactive Reports",
+    [EIssueType.SCRIPT_INCLUDE_NO_ACL]: "Script Include No ACL", // need a better title here
     [EIssueType.SAM_REPORT]: "Sofware asset management report",
     [EIssueType.HAM_REPORT]: "Hardware asset management report",
     [EIssueType.ADMIN_ROLE_REPORT]: "No more than 5 admin in one instance",
