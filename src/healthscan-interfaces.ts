@@ -142,8 +142,8 @@ export interface ReportThreeMonthData {
     url: string;
     reportName: string;
     table: string;
-    query: string;
     created: string;
+    lastRunDate: string | undefined;
     issue: "Not run in 3 months" | "Never run";
   }>;
 }
