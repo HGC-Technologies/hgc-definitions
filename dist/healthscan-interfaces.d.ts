@@ -203,6 +203,7 @@ export interface IJsonData {
     RoleReport?: IPDAdminRoleData[];
     UnderUsedLicenses?: ILowUsageLicence[];
     AttachmentStats?: IAttachmentStats;
+    AsyncAjaxMethodData?: ISyncAjaxMeth[];
 }
 export interface IAggregatedSAMData {
     softwareName: string;
@@ -224,5 +225,19 @@ export interface ILowUsageLicence {
     isUnderUsed?: boolean;
     pool?: boolean;
     poolLicences?: any[];
+}
+export interface ISyncAjaxMeth {
+    name: string;
+    id: string;
+    active: string;
+    description: string;
+    URL: string;
+}
+export interface IBeforeBRInsertScriptsData {
+    name: string;
+    id: string;
+    active: string;
+    condition: string;
+    URL: string;
 }
 export {};
