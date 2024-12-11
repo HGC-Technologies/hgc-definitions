@@ -251,3 +251,19 @@ export interface ILowUsageLicence {
   pool?: boolean,
   poolLicences?: any[]
 }
+
+export interface ISyncAjaxMeth {
+  name: string;
+  id: string;
+  active: string;
+  description: string;
+  URL: string;
+}
+
+export interface IBeforeBRInsertScriptsData {
+  name: string;
+  id: string;
+  active: string;
+  condition: string;
+  URL: string;
+}
