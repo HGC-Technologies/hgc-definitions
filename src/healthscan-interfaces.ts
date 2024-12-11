@@ -226,7 +226,8 @@ export interface IJsonData {
   SAMReport?: IAggregatedSAMData[]
   RoleReport?: IPDAdminRoleData[],
   UnderUsedLicenses?: ILowUsageLicence[],
-  AttachmentStats?: IAttachmentStats
+  AttachmentStats?: IAttachmentStats,
+  AsyncAjaxMethodData?:ISyncAjaxMeth[],
 }
 
 export interface IAggregatedSAMData {
