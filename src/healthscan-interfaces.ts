@@ -228,6 +228,7 @@ export interface IJsonData {
   UnderUsedLicenses?: ILowUsageLicence[],
   AttachmentStats?: IAttachmentStats,
   AsyncAjaxMethodData?:ISyncAjaxMeth[],
+  InsertBusinessRuleData?:IBeforeBRInsertScriptsData[]
 }
 
 export interface IAggregatedSAMData {
