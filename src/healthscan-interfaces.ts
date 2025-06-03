@@ -103,6 +103,7 @@ interface TableEntries {
   tableName: string,
   recordCount: number
   URL: string;
+  tableType: "NORMAL" | "CUSTOM" | "SYS" | "TASK";
 }
 export interface IPDFLargeTablesData {
   maxDisplayedRecords: number;
