@@ -97,6 +97,7 @@ export interface IPDFLargeTablesData {
     maxDisplayedRecords: number;
     largeTableThreshold: number;
     largeTables: Array<TableEntries>;
+    tableType: "NORMAL" | "CUSTOM" | "SYS" | "TASK";
 }
 interface ReportQueries {
     url: string;
