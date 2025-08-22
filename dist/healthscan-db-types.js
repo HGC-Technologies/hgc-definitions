@@ -14,7 +14,7 @@ exports.CategoryTitleMap = {
     [ECategory.MANAGEABILITY]: "Manageability",
     [ECategory.UPGRADABILITY]: "Upgradability",
     [ECategory.SECURITY]: "Security",
-    [ECategory.PERFORMANCE]: "Performance"
+    [ECategory.PERFORMANCE]: "Performance",
 };
 var EIssueType;
 (function (EIssueType) {
@@ -44,11 +44,11 @@ var EIssueType;
     EIssueType[EIssueType["ADMIN_ROLE_REPORT"] = 24] = "ADMIN_ROLE_REPORT";
     EIssueType[EIssueType["INSTANCE_LICENSES"] = 25] = "INSTANCE_LICENSES";
     EIssueType[EIssueType["UNDERUSED_LICENSES"] = 26] = "UNDERUSED_LICENSES";
-    EIssueType[EIssueType["MONTHLY_REPORT"] = 27] = "MONTHLY_REPORT";
+    //MONTHLY_REPORT=27,
     EIssueType[EIssueType["ATTACHMENT_STATS"] = 28] = "ATTACHMENT_STATS";
     EIssueType[EIssueType["SOFTWARE_ENTITLEMENTS"] = 29] = "SOFTWARE_ENTITLEMENTS";
 })(EIssueType || (exports.EIssueType = EIssueType = {}));
-;
+//export type EIssueTypeExcludeMonthly = Exclude<EIssueType, EIssueType.MONTHLY_REPORT>;
 exports.IssueTypeTitleMap = {
     [EIssueType.SLOW_QUERIES]: "Slow Queries",
     [EIssueType.LARGE_TABLES]: "Large Tables",
@@ -77,28 +77,45 @@ exports.IssueTypeTitleMap = {
     [EIssueType.INSTANCE_LICENSES]: "Licenses not being used.",
     [EIssueType.UNDERUSED_LICENSES]: "Underutilized licenses",
     [EIssueType.ATTACHMENT_STATS]: "Attachment stats",
-    [EIssueType.SOFTWARE_ENTITLEMENTS]: "Software Entitlements"
+    [EIssueType.SOFTWARE_ENTITLEMENTS]: "Software Entitlements",
 };
 exports.CategoryToIssueTypesMap = {
     [ECategory.UX_UI]: [
-        EIssueType.LONG_TITLES, EIssueType.GLOBAL_UI_SCRIPTS, EIssueType.BUSY_FORMS,
+        EIssueType.LONG_TITLES,
+        EIssueType.GLOBAL_UI_SCRIPTS,
+        EIssueType.BUSY_FORMS,
         EIssueType.TOO_MANY_CHOICES,
     ],
     [ECategory.MANAGEABILITY]: [
-        EIssueType.INSTANCE_ERROR_LOGS, EIssueType.DUPLICATE_SCRIPT_INCLUDES,
-        EIssueType.DUPLICATE_FIELDS, EIssueType.DUPLICATE_UPDATE_SETS,
-        EIssueType.SAM_REPORT, EIssueType.HAM_REPORT, EIssueType.SOFTWARE_ENTITLEMENTS
+        EIssueType.INSTANCE_ERROR_LOGS,
+        EIssueType.DUPLICATE_SCRIPT_INCLUDES,
+        EIssueType.DUPLICATE_FIELDS,
+        EIssueType.DUPLICATE_UPDATE_SETS,
+        EIssueType.SAM_REPORT,
+        EIssueType.HAM_REPORT,
+        EIssueType.SOFTWARE_ENTITLEMENTS,
     ],
     [ECategory.UPGRADABILITY]: [
-        EIssueType.LAST_SYSTEM_UPGRADE, EIssueType.REPORT_3_MONTHS, EIssueType.INSTANCE_LICENSES, EIssueType.UNDERUSED_LICENSES
+        EIssueType.LAST_SYSTEM_UPGRADE,
+        EIssueType.REPORT_3_MONTHS,
+        EIssueType.INSTANCE_LICENSES,
+        EIssueType.UNDERUSED_LICENSES,
     ],
     [ECategory.SECURITY]: [
-        EIssueType.ACL, EIssueType.DATABASE_LOOKUPS_IN_ACCESS_CONTROL_RULES,
-        EIssueType.GLOBAL_BUSINESS_RULES, EIssueType.SCRIPT_INCLUDE_REPORTS,
-        EIssueType.ASYNC_AJAX_METHODS, EIssueType.SCRIPT_INCLUDE_NO_ACL, EIssueType.ADMIN_ROLE_REPORT
+        EIssueType.ACL,
+        EIssueType.DATABASE_LOOKUPS_IN_ACCESS_CONTROL_RULES,
+        EIssueType.GLOBAL_BUSINESS_RULES,
+        EIssueType.SCRIPT_INCLUDE_REPORTS,
+        EIssueType.ASYNC_AJAX_METHODS,
+        EIssueType.SCRIPT_INCLUDE_NO_ACL,
+        EIssueType.ADMIN_ROLE_REPORT,
     ],
     [ECategory.PERFORMANCE]: [
-        EIssueType.SLOW_QUERIES, EIssueType.SLOW_SCRIPTS, EIssueType.LONG_RUNNING_REPORTS,
-        EIssueType.LARGE_TABLES, EIssueType.INSERTS_IN_BUSINESS_RULES, EIssueType.ATTACHMENT_STATS
+        EIssueType.SLOW_QUERIES,
+        EIssueType.SLOW_SCRIPTS,
+        EIssueType.LONG_RUNNING_REPORTS,
+        EIssueType.LARGE_TABLES,
+        EIssueType.INSERTS_IN_BUSINESS_RULES,
+        EIssueType.ATTACHMENT_STATS,
     ],
 };
